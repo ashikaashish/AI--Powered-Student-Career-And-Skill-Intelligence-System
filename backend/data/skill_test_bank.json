@@ -1,0 +1,954 @@
+{
+  "JavaScript": [
+    {
+      "question": "Which keyword declares a block-scoped variable that can be reassigned?",
+      "options": [
+        "let",
+        "var",
+        "const",
+        "static"
+      ],
+      "answer": "let",
+      "explanation": "let is block-scoped and reassignable; const cannot be reassigned."
+    },
+    {
+      "question": "What does typeof null return?",
+      "options": [
+        "object",
+        "null",
+        "undefined",
+        "number"
+      ],
+      "answer": "object",
+      "explanation": "This is a long-standing quirk of JavaScript."
+    },
+    {
+      "question": "Which method adds an item to the end of an array?",
+      "options": [
+        "push()",
+        "pop()",
+        "shift()",
+        "unshift()"
+      ],
+      "answer": "push()",
+      "explanation": "push() appends; pop() removes from the end."
+    },
+    {
+      "question": "What does === check?",
+      "options": [
+        "Value and type",
+        "Value only",
+        "Type only",
+        "Reference only"
+      ],
+      "answer": "Value and type",
+      "explanation": "Strict equality does no type coercion."
+    },
+    {
+      "question": "What does Promise.all() do?",
+      "options": [
+        "Waits for all promises to resolve",
+        "Resolves with the first promise",
+        "Runs promises one by one",
+        "Cancels pending promises"
+      ],
+      "answer": "Waits for all promises to resolve",
+      "explanation": "It resolves when all resolve, or rejects if any rejects."
+    },
+    {
+      "question": "What is a closure?",
+      "options": [
+        "A function that remembers variables from its outer scope",
+        "A function with no arguments",
+        "A way to close the browser",
+        "A private class"
+      ],
+      "answer": "A function that remembers variables from its outer scope",
+      "explanation": "Closures keep access to the scope where they were created."
+    }
+  ],
+  "HTML": [
+    {
+      "question": "Which tag creates a hyperlink?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<url>"
+      ],
+      "answer": "<a>",
+      "explanation": "The anchor tag with an href attribute makes links."
+    },
+    {
+      "question": "Which tag is used for the largest heading?",
+      "options": [
+        "<h1>",
+        "<head>",
+        "<h6>",
+        "<title>"
+      ],
+      "answer": "<h1>",
+      "explanation": "h1 is the top-level heading; h6 is the smallest."
+    },
+    {
+      "question": "Which attribute gives alternate text for an image?",
+      "options": [
+        "alt",
+        "title",
+        "src",
+        "caption"
+      ],
+      "answer": "alt",
+      "explanation": "alt helps accessibility and shows if the image fails to load."
+    },
+    {
+      "question": "Which element holds the visible page content?",
+      "options": [
+        "<body>",
+        "<head>",
+        "<meta>",
+        "<html>"
+      ],
+      "answer": "<body>",
+      "explanation": "<head> holds metadata; <body> holds what users see."
+    },
+    {
+      "question": "Which tag creates an ordered list?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<dl>"
+      ],
+      "answer": "<ol>",
+      "explanation": "<ol> numbers its items; <ul> uses bullets."
+    },
+    {
+      "question": "Which is a semantic HTML5 element?",
+      "options": [
+        "<article>",
+        "<div>",
+        "<span>",
+        "<b>"
+      ],
+      "answer": "<article>",
+      "explanation": "Semantic elements describe their meaning, unlike div and span."
+    }
+  ],
+  "CSS": [
+    {
+      "question": "Which property changes text color?",
+      "options": [
+        "color",
+        "font-color",
+        "text-color",
+        "fill"
+      ],
+      "answer": "color",
+      "explanation": "color sets the foreground text color."
+    },
+    {
+      "question": "What does the box model include from inside out?",
+      "options": [
+        "Content, padding, border, margin",
+        "Content, margin, border, padding",
+        "Border, content, padding, margin",
+        "Padding, content, margin, border"
+      ],
+      "answer": "Content, padding, border, margin",
+      "explanation": "Content is wrapped by padding, then border, then margin."
+    },
+    {
+      "question": "Which display value makes a flex container?",
+      "options": [
+        "flex",
+        "block-flex",
+        "inline",
+        "grid-flex"
+      ],
+      "answer": "flex",
+      "explanation": "display: flex enables Flexbox layout."
+    },
+    {
+      "question": "Which selector targets an element with id 'main'?",
+      "options": [
+        "#main",
+        ".main",
+        "main",
+        "*main"
+      ],
+      "answer": "#main",
+      "explanation": "# selects by id, . selects by class."
+    },
+    {
+      "question": "Which property controls stacking order of positioned elements?",
+      "options": [
+        "z-index",
+        "order",
+        "stack",
+        "layer"
+      ],
+      "answer": "z-index",
+      "explanation": "Higher z-index values appear on top."
+    },
+    {
+      "question": "What does position: absolute position an element relative to?",
+      "options": [
+        "Nearest positioned ancestor",
+        "The viewport always",
+        "Its previous sibling",
+        "The document title"
+      ],
+      "answer": "Nearest positioned ancestor",
+      "explanation": "If none exists, it falls back to the initial containing block."
+    }
+  ],
+  "React": [
+    {
+      "question": "What hook manages local component state?",
+      "options": [
+        "useState",
+        "useEffect",
+        "useRef",
+        "useMemo"
+      ],
+      "answer": "useState",
+      "explanation": "useState returns a value and a setter."
+    },
+    {
+      "question": "What is JSX?",
+      "options": [
+        "A syntax extension that looks like HTML inside JavaScript",
+        "A database language",
+        "A CSS preprocessor",
+        "A testing library"
+      ],
+      "answer": "A syntax extension that looks like HTML inside JavaScript",
+      "explanation": "JSX is compiled into React.createElement calls."
+    },
+    {
+      "question": "What is the purpose of the key prop in lists?",
+      "options": [
+        "Help React identify which items changed",
+        "Style list items",
+        "Encrypt data",
+        "Set the item order"
+      ],
+      "answer": "Help React identify which items changed",
+      "explanation": "Stable keys let React update lists efficiently."
+    },
+    {
+      "question": "When does useEffect with an empty dependency array run?",
+      "options": [
+        "Once after the first render",
+        "On every render",
+        "Never",
+        "Before every render"
+      ],
+      "answer": "Once after the first render",
+      "explanation": "[] means no dependencies, so it runs on mount only."
+    },
+    {
+      "question": "How do parent components pass data to children?",
+      "options": [
+        "Props",
+        "State",
+        "Refs",
+        "Context only"
+      ],
+      "answer": "Props",
+      "explanation": "Props are read-only inputs to a component."
+    },
+    {
+      "question": "Why should state not be mutated directly?",
+      "options": [
+        "React may not detect the change and re-render",
+        "It uses more memory",
+        "It breaks CSS",
+        "It is a syntax error"
+      ],
+      "answer": "React may not detect the change and re-render",
+      "explanation": "Always use the setter with a new value."
+    }
+  ],
+  "Node.js": [
+    {
+      "question": "What is Node.js?",
+      "options": [
+        "A JavaScript runtime built on the V8 engine",
+        "A CSS framework",
+        "A relational database",
+        "A browser"
+      ],
+      "answer": "A JavaScript runtime built on the V8 engine",
+      "explanation": "It runs JavaScript outside the browser."
+    },
+    {
+      "question": "Which command installs a package from npm?",
+      "options": [
+        "npm install",
+        "node get",
+        "npm fetch",
+        "npm add-package"
+      ],
+      "answer": "npm install",
+      "explanation": "npm install downloads dependencies."
+    },
+    {
+      "question": "Which file lists a project's dependencies?",
+      "options": [
+        "package.json",
+        "index.html",
+        "node.config",
+        "modules.txt"
+      ],
+      "answer": "package.json",
+      "explanation": "package.json holds metadata and dependencies."
+    },
+    {
+      "question": "Which function loads a CommonJS module?",
+      "options": [
+        "require()",
+        "import()",
+        "load()",
+        "include()"
+      ],
+      "answer": "require()",
+      "explanation": "require() is the CommonJS way; import is for ES modules."
+    },
+    {
+      "question": "Node.js handles concurrency mainly through?",
+      "options": [
+        "An event loop with non-blocking I/O",
+        "One thread per request",
+        "Multiple processes only",
+        "Blocking calls"
+      ],
+      "answer": "An event loop with non-blocking I/O",
+      "explanation": "The event loop lets one thread handle many connections."
+    },
+    {
+      "question": "Which module is built in for working with files?",
+      "options": [
+        "fs",
+        "files",
+        "disk",
+        "io-utils"
+      ],
+      "answer": "fs",
+      "explanation": "fs provides file system functions."
+    }
+  ],
+  "C++": [
+    {
+      "question": "Which operator accesses a member through a pointer?",
+      "options": [
+        "->",
+        ".",
+        "::",
+        "&"
+      ],
+      "answer": "->",
+      "explanation": "ptr->member is shorthand for (*ptr).member."
+    },
+    {
+      "question": "What is the output stream object in C++?",
+      "options": [
+        "std::cout",
+        "std::print",
+        "std::out",
+        "std::write"
+      ],
+      "answer": "std::cout",
+      "explanation": "cout writes to standard output."
+    },
+    {
+      "question": "What does the 'new' keyword do?",
+      "options": [
+        "Allocates memory on the heap",
+        "Creates a file",
+        "Declares a namespace",
+        "Imports a library"
+      ],
+      "answer": "Allocates memory on the heap",
+      "explanation": "Memory from new must be released with delete."
+    },
+    {
+      "question": "Which concept lets a derived class override a base class method?",
+      "options": [
+        "Polymorphism (virtual functions)",
+        "Encapsulation",
+        "Templates",
+        "Overloading only"
+      ],
+      "answer": "Polymorphism (virtual functions)",
+      "explanation": "Virtual functions enable runtime polymorphism."
+    },
+    {
+      "question": "What is a reference in C++?",
+      "options": [
+        "An alias for an existing variable",
+        "A copy of a variable",
+        "A null pointer",
+        "A heap object"
+      ],
+      "answer": "An alias for an existing variable",
+      "explanation": "Declared with & and must be initialized."
+    },
+    {
+      "question": "Which container provides dynamic array behavior?",
+      "options": [
+        "std::vector",
+        "std::array",
+        "std::pair",
+        "std::tuple"
+      ],
+      "answer": "std::vector",
+      "explanation": "vector grows and shrinks at runtime."
+    }
+  ],
+  "Docker": [
+    {
+      "question": "What is a Docker image?",
+      "options": [
+        "A read-only template used to create containers",
+        "A running process",
+        "A virtual machine disk",
+        "A network driver"
+      ],
+      "answer": "A read-only template used to create containers",
+      "explanation": "Containers are running instances of images."
+    },
+    {
+      "question": "Which file defines how to build an image?",
+      "options": [
+        "Dockerfile",
+        "docker.json",
+        "compose.txt",
+        "image.yml"
+      ],
+      "answer": "Dockerfile",
+      "explanation": "A Dockerfile lists build instructions."
+    },
+    {
+      "question": "Which command lists running containers?",
+      "options": [
+        "docker ps",
+        "docker list",
+        "docker show",
+        "docker images"
+      ],
+      "answer": "docker ps",
+      "explanation": "docker ps -a includes stopped ones."
+    },
+    {
+      "question": "What does docker-compose help with?",
+      "options": [
+        "Defining and running multi-container apps",
+        "Compiling code",
+        "Monitoring CPU",
+        "Writing images by hand"
+      ],
+      "answer": "Defining and running multi-container apps",
+      "explanation": "It uses a YAML file for several services."
+    },
+    {
+      "question": "How do containers differ from VMs?",
+      "options": [
+        "They share the host OS kernel",
+        "They include a full OS each",
+        "They need no isolation",
+        "They only run on Linux desktops"
+      ],
+      "answer": "They share the host OS kernel",
+      "explanation": "This makes containers lighter and faster to start."
+    },
+    {
+      "question": "Which instruction sets the base image in a Dockerfile?",
+      "options": [
+        "FROM",
+        "BASE",
+        "IMAGE",
+        "START"
+      ],
+      "answer": "FROM",
+      "explanation": "FROM must be the first instruction."
+    }
+  ],
+  "Linux": [
+    {
+      "question": "Which command lists files in a directory?",
+      "options": [
+        "ls",
+        "dir-list",
+        "show",
+        "cat"
+      ],
+      "answer": "ls",
+      "explanation": "ls lists directory contents."
+    },
+    {
+      "question": "Which command changes file permissions?",
+      "options": [
+        "chmod",
+        "chown",
+        "chgrp",
+        "perm"
+      ],
+      "answer": "chmod",
+      "explanation": "chmod sets read/write/execute bits."
+    },
+    {
+      "question": "What does 'pwd' print?",
+      "options": [
+        "The current working directory",
+        "The password",
+        "The process ID",
+        "The package version"
+      ],
+      "answer": "The current working directory",
+      "explanation": "pwd stands for print working directory."
+    },
+    {
+      "question": "Which command searches text using patterns?",
+      "options": [
+        "grep",
+        "find",
+        "sed",
+        "awk -f"
+      ],
+      "answer": "grep",
+      "explanation": "grep prints lines that match a pattern."
+    },
+    {
+      "question": "What does 'sudo' do?",
+      "options": [
+        "Runs a command with superuser privileges",
+        "Deletes a user",
+        "Shuts the system down",
+        "Switches shells"
+      ],
+      "answer": "Runs a command with superuser privileges",
+      "explanation": "It temporarily elevates privileges."
+    },
+    {
+      "question": "Which symbol pipes one command's output into another?",
+      "options": [
+        "|",
+        ">",
+        "&",
+        "<"
+      ],
+      "answer": "|",
+      "explanation": "The pipe connects stdout to the next command's stdin."
+    }
+  ],
+  "AWS": [
+    {
+      "question": "What is Amazon S3 used for?",
+      "options": [
+        "Object storage",
+        "Virtual servers",
+        "DNS only",
+        "Relational databases"
+      ],
+      "answer": "Object storage",
+      "explanation": "S3 stores files as objects in buckets."
+    },
+    {
+      "question": "Which service provides virtual servers?",
+      "options": [
+        "EC2",
+        "S3",
+        "RDS",
+        "Lambda"
+      ],
+      "answer": "EC2",
+      "explanation": "EC2 offers resizable compute instances."
+    },
+    {
+      "question": "What does AWS Lambda let you do?",
+      "options": [
+        "Run code without managing servers",
+        "Host static DNS",
+        "Store backups only",
+        "Create VPN hardware"
+      ],
+      "answer": "Run code without managing servers",
+      "explanation": "Lambda is serverless and billed per execution."
+    },
+    {
+      "question": "Which service manages users and permissions?",
+      "options": [
+        "IAM",
+        "VPC",
+        "SNS",
+        "EBS"
+      ],
+      "answer": "IAM",
+      "explanation": "Identity and Access Management controls access."
+    },
+    {
+      "question": "Which service is a managed relational database?",
+      "options": [
+        "RDS",
+        "S3",
+        "SQS",
+        "CloudFront"
+      ],
+      "answer": "RDS",
+      "explanation": "RDS runs engines like MySQL and PostgreSQL."
+    },
+    {
+      "question": "What is a Region in AWS?",
+      "options": [
+        "A geographic area containing multiple Availability Zones",
+        "A single data center rack",
+        "A billing plan",
+        "A type of instance"
+      ],
+      "answer": "A geographic area containing multiple Availability Zones",
+      "explanation": "Regions are isolated from each other."
+    }
+  ],
+  "Cybersecurity": [
+    {
+      "question": "What does the CIA triad stand for?",
+      "options": [
+        "Confidentiality, Integrity, Availability",
+        "Control, Identity, Access",
+        "Cipher, Insight, Audit",
+        "Confidentiality, Isolation, Authorization"
+      ],
+      "answer": "Confidentiality, Integrity, Availability",
+      "explanation": "These are the three core security goals."
+    },
+    {
+      "question": "What is phishing?",
+      "options": [
+        "Tricking users into revealing sensitive information",
+        "Overloading a server",
+        "Encrypting files for ransom",
+        "Scanning open ports"
+      ],
+      "answer": "Tricking users into revealing sensitive information",
+      "explanation": "It is usually done through fake emails or sites."
+    },
+    {
+      "question": "What does a firewall do?",
+      "options": [
+        "Filters network traffic based on rules",
+        "Stores passwords",
+        "Speeds up the internet",
+        "Backs up data"
+      ],
+      "answer": "Filters network traffic based on rules",
+      "explanation": "Firewalls allow or block traffic."
+    },
+    {
+      "question": "Which attack injects malicious SQL into inputs?",
+      "options": [
+        "SQL injection",
+        "Cross-site printing",
+        "Brute pinging",
+        "DNS caching"
+      ],
+      "answer": "SQL injection",
+      "explanation": "Parameterized queries prevent it."
+    },
+    {
+      "question": "What is two-factor authentication?",
+      "options": [
+        "Using two different proofs of identity",
+        "Two passwords of the same type",
+        "Logging in twice",
+        "Two firewalls"
+      ],
+      "answer": "Using two different proofs of identity",
+      "explanation": "For example a password plus a one-time code."
+    },
+    {
+      "question": "What is the purpose of hashing passwords?",
+      "options": [
+        "Store them so the original cannot be easily recovered",
+        "Make them shorter for display",
+        "Allow decryption later",
+        "Compress the database"
+      ],
+      "answer": "Store them so the original cannot be easily recovered",
+      "explanation": "Hashes are one-way functions."
+    }
+  ],
+  "Agile": [
+    {
+      "question": "What is a sprint?",
+      "options": [
+        "A short fixed-length cycle to deliver work",
+        "A final release",
+        "A bug report",
+        "A daily email"
+      ],
+      "answer": "A short fixed-length cycle to deliver work",
+      "explanation": "Sprints are typically 1 to 4 weeks."
+    },
+    {
+      "question": "Which is a value of the Agile Manifesto?",
+      "options": [
+        "Responding to change over following a plan",
+        "Comprehensive documentation over working software",
+        "Processes over individuals",
+        "Contract negotiation over collaboration"
+      ],
+      "answer": "Responding to change over following a plan",
+      "explanation": "The manifesto favors working software, people, collaboration and adaptability."
+    },
+    {
+      "question": "What is a product backlog?",
+      "options": [
+        "An ordered list of work for the product",
+        "A list of bugs only",
+        "The sprint report",
+        "A team chat log"
+      ],
+      "answer": "An ordered list of work for the product",
+      "explanation": "The product owner maintains and prioritizes it."
+    },
+    {
+      "question": "What is the purpose of a daily stand-up?",
+      "options": [
+        "Sync on progress and blockers",
+        "Assign blame",
+        "Plan the whole year",
+        "Review code line by line"
+      ],
+      "answer": "Sync on progress and blockers",
+      "explanation": "It is short, usually 15 minutes."
+    },
+    {
+      "question": "What is a retrospective?",
+      "options": [
+        "A meeting to reflect and improve the process",
+        "A product demo to customers",
+        "A budget review",
+        "A hiring interview"
+      ],
+      "answer": "A meeting to reflect and improve the process",
+      "explanation": "Teams discuss what went well and what to change."
+    },
+    {
+      "question": "What is a user story?",
+      "options": [
+        "A short description of a feature from the user's view",
+        "A bug log",
+        "A test script",
+        "An architecture diagram"
+      ],
+      "answer": "A short description of a feature from the user's view",
+      "explanation": "Often written as: As a user, I want ..., so that ..."
+    }
+  ],
+  "Teamwork": [
+    {
+      "question": "A teammate misses deadlines repeatedly. What is the best first step?",
+      "options": [
+        "Talk to them privately to understand the cause",
+        "Report them immediately",
+        "Do their work silently",
+        "Complain in the group chat"
+      ],
+      "answer": "Talk to them privately to understand the cause",
+      "explanation": "Understanding the cause lets you find a fair solution."
+    },
+    {
+      "question": "What makes a team effective?",
+      "options": [
+        "Clear goals and open communication",
+        "One person doing everything",
+        "Avoiding disagreements",
+        "Working in isolation"
+      ],
+      "answer": "Clear goals and open communication",
+      "explanation": "Shared goals and communication build trust."
+    },
+    {
+      "question": "Two members disagree on an approach. What helps most?",
+      "options": [
+        "Listen to both and decide using shared criteria",
+        "Let the loudest person win",
+        "Ignore it",
+        "Vote without discussion"
+      ],
+      "answer": "Listen to both and decide using shared criteria",
+      "explanation": "Objective criteria keep it constructive."
+    },
+    {
+      "question": "How should credit for a success be handled?",
+      "options": [
+        "Acknowledge everyone who contributed",
+        "Take it as the leader",
+        "Give it only to seniors",
+        "Avoid mentioning anyone"
+      ],
+      "answer": "Acknowledge everyone who contributed",
+      "explanation": "Recognition builds morale."
+    },
+    {
+      "question": "You finish your task early. What is a good teamwork action?",
+      "options": [
+        "Offer help to teammates",
+        "Wait idle",
+        "Start unrelated work quietly",
+        "Leave"
+      ],
+      "answer": "Offer help to teammates",
+      "explanation": "Supporting others improves overall delivery."
+    },
+    {
+      "question": "What is active listening?",
+      "options": [
+        "Fully focusing and confirming you understood",
+        "Waiting for your turn to talk",
+        "Taking notes only",
+        "Nodding without attention"
+      ],
+      "answer": "Fully focusing and confirming you understood",
+      "explanation": "It includes paraphrasing and asking questions."
+    }
+  ],
+  "Problem Solving": [
+    {
+      "question": "What is the first step in solving a problem?",
+      "options": [
+        "Define the problem clearly",
+        "Pick a solution",
+        "Assign blame",
+        "Collect random data"
+      ],
+      "answer": "Define the problem clearly",
+      "explanation": "A clear definition prevents solving the wrong thing."
+    },
+    {
+      "question": "What is a root cause analysis for?",
+      "options": [
+        "Finding the underlying reason, not just symptoms",
+        "Documenting meetings",
+        "Speeding up typing",
+        "Choosing a team"
+      ],
+      "answer": "Finding the underlying reason, not just symptoms",
+      "explanation": "Fixing root causes prevents recurrence."
+    },
+    {
+      "question": "Which technique asks 'why' repeatedly?",
+      "options": [
+        "5 Whys",
+        "SWOT",
+        "Gantt",
+        "Pareto"
+      ],
+      "answer": "5 Whys",
+      "explanation": "It drills from symptom to cause."
+    },
+    {
+      "question": "After choosing a solution, what should you do?",
+      "options": [
+        "Implement it and evaluate the results",
+        "Forget it",
+        "Change it immediately",
+        "Wait for someone to complain"
+      ],
+      "answer": "Implement it and evaluate the results",
+      "explanation": "Review outcomes and adjust."
+    },
+    {
+      "question": "Why generate several options before deciding?",
+      "options": [
+        "It increases the chance of finding a better solution",
+        "It wastes time",
+        "It confuses everyone",
+        "It is required by law"
+      ],
+      "answer": "It increases the chance of finding a better solution",
+      "explanation": "Comparing options reduces bias toward the first idea."
+    },
+    {
+      "question": "A plan fails midway. What is the best response?",
+      "options": [
+        "Learn from it and adapt the plan",
+        "Hide the failure",
+        "Repeat unchanged",
+        "Stop all work"
+      ],
+      "answer": "Learn from it and adapt the plan",
+      "explanation": "Iterating on feedback is core to problem solving."
+    }
+  ],
+  "Time Management": [
+    {
+      "question": "What does the Eisenhower matrix sort tasks by?",
+      "options": [
+        "Urgency and importance",
+        "Cost and size",
+        "Difficulty and fun",
+        "Team and owner"
+      ],
+      "answer": "Urgency and importance",
+      "explanation": "It separates urgent from important work."
+    },
+    {
+      "question": "What is a good way to handle a large project?",
+      "options": [
+        "Break it into smaller tasks with deadlines",
+        "Wait until the deadline",
+        "Do easy parts only",
+        "Start with random tasks"
+      ],
+      "answer": "Break it into smaller tasks with deadlines",
+      "explanation": "Smaller steps make progress measurable."
+    },
+    {
+      "question": "What is the Pomodoro technique?",
+      "options": [
+        "Work in focused intervals with short breaks",
+        "Work 12 hours straight",
+        "Multitask constantly",
+        "Do tasks in random order"
+      ],
+      "answer": "Work in focused intervals with short breaks",
+      "explanation": "Typically 25 minutes of work and 5 minutes rest."
+    },
+    {
+      "question": "What is the main problem with multitasking?",
+      "options": [
+        "It reduces focus and increases mistakes",
+        "It saves time",
+        "It improves memory",
+        "It has no downsides"
+      ],
+      "answer": "It reduces focus and increases mistakes",
+      "explanation": "Context switching has a cost."
+    },
+    {
+      "question": "What should you do when asked to take on more work than you can handle?",
+      "options": [
+        "Communicate capacity and prioritize",
+        "Say yes and rush",
+        "Ignore the request",
+        "Work without sleep"
+      ],
+      "answer": "Communicate capacity and prioritize",
+      "explanation": "Be honest about trade-offs."
+    },
+    {
+      "question": "Why plan your day in advance?",
+      "options": [
+        "It helps you focus on priorities",
+        "It guarantees no surprises",
+        "It removes all stress",
+        "It replaces deadlines"
+      ],
+      "answer": "It helps you focus on priorities",
+      "explanation": "Planning reduces reactive work."
+    }
+  ]
+}

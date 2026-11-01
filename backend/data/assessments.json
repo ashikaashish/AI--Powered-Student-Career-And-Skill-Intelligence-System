@@ -1,0 +1,1702 @@
+{
+ "Python": [
+  {
+   "question": "Which data type is immutable in Python?",
+   "options": [
+    "tuple",
+    "list",
+    "dict",
+    "set"
+   ],
+   "answer": "tuple",
+   "explanation": "Tuples cannot be changed after creation; lists, dicts and sets can."
+  },
+  {
+   "question": "What does len([4, 8, 15]) return?",
+   "options": [
+    "3",
+    "15",
+    "2",
+    "27"
+   ],
+   "answer": "3",
+   "explanation": "len() returns the number of items in the list."
+  },
+  {
+   "question": "Which keyword defines a function in Python?",
+   "options": [
+    "def",
+    "func",
+    "function",
+    "define"
+   ],
+   "answer": "def",
+   "explanation": "Functions are declared with def."
+  },
+  {
+   "question": "What is the output of print(2 ** 3)?",
+   "options": [
+    "8",
+    "6",
+    "5",
+    "9"
+   ],
+   "answer": "8",
+   "explanation": "** is the exponent operator, so 2 ** 3 is 8."
+  },
+  {
+   "question": "Which statement correctly opens a file for reading and closes it automatically?",
+   "options": [
+    "with open('a.txt') as f:",
+    "open('a.txt').auto()",
+    "using open('a.txt') f:",
+    "read('a.txt') as f:"
+   ],
+   "answer": "with open('a.txt') as f:",
+   "explanation": "The with statement is a context manager that closes the file for you."
+  },
+  {
+   "question": "What does a list comprehension like [x*x for x in range(3)] produce?",
+   "options": [
+    "[0, 1, 4]",
+    "[1, 4, 9]",
+    "[0, 1, 2]",
+    "[0, 2, 4]"
+   ],
+   "answer": "[0, 1, 4]",
+   "explanation": "range(3) gives 0,1,2 and each is squared."
+  }
+ ],
+ "SQL": [
+  {
+   "question": "Which SQL clause filters rows BEFORE grouping?",
+   "options": [
+    "WHERE",
+    "HAVING",
+    "ORDER BY",
+    "LIMIT"
+   ],
+   "answer": "WHERE",
+   "explanation": "WHERE filters rows; HAVING filters groups after GROUP BY."
+  },
+  {
+   "question": "Which JOIN returns only rows that have matches in both tables?",
+   "options": [
+    "INNER JOIN",
+    "LEFT JOIN",
+    "FULL OUTER JOIN",
+    "CROSS JOIN"
+   ],
+   "answer": "INNER JOIN",
+   "explanation": "INNER JOIN keeps only matching rows."
+  },
+  {
+   "question": "Which statement removes all rows that match a condition?",
+   "options": [
+    "DELETE FROM table WHERE ...",
+    "DROP FROM table WHERE ...",
+    "REMOVE table WHERE ...",
+    "TRUNCATE ROW WHERE ..."
+   ],
+   "answer": "DELETE FROM table WHERE ...",
+   "explanation": "DELETE removes rows; DROP removes the whole table."
+  },
+  {
+   "question": "What does COUNT(*) return?",
+   "options": [
+    "The number of rows",
+    "The sum of all columns",
+    "The number of columns",
+    "The largest value"
+   ],
+   "answer": "The number of rows",
+   "explanation": "COUNT(*) counts rows."
+  },
+  {
+   "question": "Which constraint uniquely identifies each row in a table?",
+   "options": [
+    "PRIMARY KEY",
+    "FOREIGN KEY",
+    "CHECK",
+    "DEFAULT"
+   ],
+   "answer": "PRIMARY KEY",
+   "explanation": "A primary key uniquely identifies each record."
+  },
+  {
+   "question": "Which clause sorts the result set?",
+   "options": [
+    "ORDER BY",
+    "GROUP BY",
+    "SORT BY",
+    "ARRANGE"
+   ],
+   "answer": "ORDER BY",
+   "explanation": "ORDER BY sorts results ascending or descending."
+  }
+ ],
+ "Git": [
+  {
+   "question": "Which command creates a new local Git repository?",
+   "options": [
+    "git init",
+    "git start",
+    "git new",
+    "git create"
+   ],
+   "answer": "git init",
+   "explanation": "git init initialises a repository in the current folder."
+  },
+  {
+   "question": "What does git commit do?",
+   "options": [
+    "Records staged changes as a snapshot in history",
+    "Uploads changes to GitHub",
+    "Downloads remote changes",
+    "Deletes the last change"
+   ],
+   "answer": "Records staged changes as a snapshot in history",
+   "explanation": "A commit saves the staged snapshot locally."
+  },
+  {
+   "question": "Which command uploads your local commits to a remote?",
+   "options": [
+    "git push",
+    "git pull",
+    "git fetch",
+    "git clone"
+   ],
+   "answer": "git push",
+   "explanation": "git push sends commits to the remote."
+  },
+  {
+   "question": "What is a branch in Git?",
+   "options": [
+    "An independent line of development",
+    "A backup copy of the repo",
+    "A remote server",
+    "A type of commit message"
+   ],
+   "answer": "An independent line of development",
+   "explanation": "Branches let you work on features separately."
+  },
+  {
+   "question": "Which command moves changes into the staging area?",
+   "options": [
+    "git add",
+    "git stage-all",
+    "git save",
+    "git put"
+   ],
+   "answer": "git add",
+   "explanation": "git add stages changes for the next commit."
+  },
+  {
+   "question": "What does git clone do?",
+   "options": [
+    "Copies a remote repository to your machine",
+    "Merges two branches",
+    "Reverts a commit",
+    "Creates a tag"
+   ],
+   "answer": "Copies a remote repository to your machine",
+   "explanation": "clone downloads the full repository with history."
+  }
+ ],
+ "Java": [
+  {
+   "question": "Which keyword creates an object in Java?",
+   "options": [
+    "new",
+    "create",
+    "make",
+    "alloc"
+   ],
+   "answer": "new",
+   "explanation": "new allocates an object and calls its constructor."
+  },
+  {
+   "question": "What is the entry point of a Java program?",
+   "options": [
+    "public static void main(String[] args)",
+    "public void start()",
+    "static int run()",
+    "void init()"
+   ],
+   "answer": "public static void main(String[] args)",
+   "explanation": "The JVM starts execution at main."
+  },
+  {
+   "question": "Which concept lets a class acquire the properties of another class?",
+   "options": [
+    "Inheritance",
+    "Encapsulation",
+    "Overloading",
+    "Serialization"
+   ],
+   "answer": "Inheritance",
+   "explanation": "extends enables inheritance."
+  },
+  {
+   "question": "Which collection does NOT allow duplicate elements?",
+   "options": [
+    "HashSet",
+    "ArrayList",
+    "LinkedList",
+    "Vector"
+   ],
+   "answer": "HashSet",
+   "explanation": "A Set stores unique elements."
+  },
+  {
+   "question": "What does the final keyword on a variable mean?",
+   "options": [
+    "Its value cannot be changed after assignment",
+    "It is deleted after use",
+    "It is shared across classes",
+    "It must be an integer"
+   ],
+   "answer": "Its value cannot be changed after assignment",
+   "explanation": "final variables are constants once assigned."
+  },
+  {
+   "question": "Which of these is a checked exception?",
+   "options": [
+    "IOException",
+    "NullPointerException",
+    "ArithmeticException",
+    "ArrayIndexOutOfBoundsException"
+   ],
+   "answer": "IOException",
+   "explanation": "IOException must be handled or declared; the others are unchecked."
+  }
+ ],
+ "Data Structures": [
+  {
+   "question": "Which data structure follows Last-In-First-Out (LIFO)?",
+   "options": [
+    "Stack",
+    "Queue",
+    "Array",
+    "Heap"
+   ],
+   "answer": "Stack",
+   "explanation": "A stack pops the most recently pushed item."
+  },
+  {
+   "question": "What is the average time complexity of binary search on a sorted array?",
+   "options": [
+    "O(log n)",
+    "O(n)",
+    "O(n log n)",
+    "O(1)"
+   ],
+   "answer": "O(log n)",
+   "explanation": "Each step halves the search space."
+  },
+  {
+   "question": "Which structure is best for fast lookup by key on average?",
+   "options": [
+    "Hash table",
+    "Linked list",
+    "Stack",
+    "Queue"
+   ],
+   "answer": "Hash table",
+   "explanation": "Hash tables give O(1) average lookup."
+  },
+  {
+   "question": "In a queue, elements are removed from the…",
+   "options": [
+    "Front",
+    "Rear",
+    "Middle",
+    "Random position"
+   ],
+   "answer": "Front",
+   "explanation": "Queues are FIFO: dequeue from the front."
+  },
+  {
+   "question": "Which traversal of a binary search tree gives sorted order?",
+   "options": [
+    "In-order",
+    "Pre-order",
+    "Post-order",
+    "Level-order"
+   ],
+   "answer": "In-order",
+   "explanation": "In-order visits left, node, right, producing sorted keys."
+  },
+  {
+   "question": "Which structure represents relationships between pairs of objects such as roads between cities?",
+   "options": [
+    "Graph",
+    "Stack",
+    "Array",
+    "Queue"
+   ],
+   "answer": "Graph",
+   "explanation": "Graphs consist of nodes and edges."
+  }
+ ],
+ "Machine Learning": [
+  {
+   "question": "What is supervised learning?",
+   "options": [
+    "Learning from labelled examples",
+    "Learning without any data",
+    "Learning only from rewards",
+    "Grouping unlabelled data"
+   ],
+   "answer": "Learning from labelled examples",
+   "explanation": "Supervised models learn input→label mappings."
+  },
+  {
+   "question": "Which problem is an example of classification?",
+   "options": [
+    "Predicting whether an email is spam",
+    "Predicting a house price",
+    "Forecasting tomorrow's temperature",
+    "Estimating a person's income"
+   ],
+   "answer": "Predicting whether an email is spam",
+   "explanation": "Classification predicts discrete categories."
+  },
+  {
+   "question": "What does overfitting mean?",
+   "options": [
+    "The model fits training data too closely and generalises poorly",
+    "The model is too simple to learn anything",
+    "Training takes too long",
+    "The dataset is too small to load"
+   ],
+   "answer": "The model fits training data too closely and generalises poorly",
+   "explanation": "Overfit models memorise noise in the training set."
+  },
+  {
+   "question": "Why do we split data into training and test sets?",
+   "options": [
+    "To measure performance on unseen data",
+    "To make training faster",
+    "To remove outliers",
+    "To increase the number of features"
+   ],
+   "answer": "To measure performance on unseen data",
+   "explanation": "The test set estimates real-world performance."
+  },
+  {
+   "question": "Which algorithm groups unlabelled data into clusters?",
+   "options": [
+    "K-means",
+    "Linear regression",
+    "Logistic regression",
+    "Naive Bayes"
+   ],
+   "answer": "K-means",
+   "explanation": "K-means is an unsupervised clustering algorithm."
+  },
+  {
+   "question": "Which metric is commonly used for regression models?",
+   "options": [
+    "Mean squared error",
+    "Accuracy",
+    "Precision",
+    "Confusion matrix labels"
+   ],
+   "answer": "Mean squared error",
+   "explanation": "MSE measures average squared prediction error."
+  }
+ ],
+ "Deep Learning": [
+  {
+   "question": "What is an activation function used for in a neural network?",
+   "options": [
+    "To introduce non-linearity",
+    "To store the training data",
+    "To split the dataset",
+    "To reduce the number of layers"
+   ],
+   "answer": "To introduce non-linearity",
+   "explanation": "Without non-linearity, stacked layers collapse into one linear map."
+  },
+  {
+   "question": "Which algorithm updates network weights using gradients of the loss?",
+   "options": [
+    "Backpropagation with gradient descent",
+    "K-means",
+    "Apriori",
+    "Binary search"
+   ],
+   "answer": "Backpropagation with gradient descent",
+   "explanation": "Backprop computes gradients; gradient descent applies them."
+  },
+  {
+   "question": "Which network type is most commonly used for image data?",
+   "options": [
+    "Convolutional Neural Network (CNN)",
+    "Decision tree",
+    "Linear regression",
+    "Naive Bayes"
+   ],
+   "answer": "Convolutional Neural Network (CNN)",
+   "explanation": "CNNs exploit spatial structure in images."
+  },
+  {
+   "question": "What does dropout do?",
+   "options": [
+    "Randomly disables neurons during training to reduce overfitting",
+    "Deletes the training data",
+    "Increases learning rate",
+    "Adds more layers"
+   ],
+   "answer": "Randomly disables neurons during training to reduce overfitting",
+   "explanation": "Dropout is a regularisation technique."
+  },
+  {
+   "question": "What is an epoch?",
+   "options": [
+    "One full pass through the training dataset",
+    "One batch of data",
+    "One neuron",
+    "One layer"
+   ],
+   "answer": "One full pass through the training dataset",
+   "explanation": "An epoch means the model has seen every training example once."
+  },
+  {
+   "question": "Which architecture is designed for sequential data such as text or time series?",
+   "options": [
+    "Recurrent network / Transformer",
+    "Pooling layer only",
+    "K-nearest neighbours",
+    "PCA"
+   ],
+   "answer": "Recurrent network / Transformer",
+   "explanation": "RNNs and Transformers model sequences."
+  }
+ ],
+ "NLP": [
+  {
+   "question": "What is tokenization in NLP?",
+   "options": [
+    "Splitting text into words or sub-words",
+    "Translating text to another language",
+    "Deleting stop words only",
+    "Encrypting text"
+   ],
+   "answer": "Splitting text into words or sub-words",
+   "explanation": "Tokenization breaks text into units a model can process."
+  },
+  {
+   "question": "What are stop words?",
+   "options": [
+    "Very common words like 'the' and 'is' often removed",
+    "Words that end a sentence",
+    "Misspelled words",
+    "Rare technical terms"
+   ],
+   "answer": "Very common words like 'the' and 'is' often removed",
+   "explanation": "Stop words carry little meaning for many tasks."
+  },
+  {
+   "question": "What does TF-IDF measure?",
+   "options": [
+    "How important a word is to a document within a collection",
+    "The length of a sentence",
+    "Grammar correctness",
+    "Sentiment of a text"
+   ],
+   "answer": "How important a word is to a document within a collection",
+   "explanation": "TF-IDF weights words by frequency and rarity."
+  },
+  {
+   "question": "Sentiment analysis is the task of…",
+   "options": [
+    "Detecting whether text is positive, negative or neutral",
+    "Translating text",
+    "Summarising audio",
+    "Correcting spelling"
+   ],
+   "answer": "Detecting whether text is positive, negative or neutral",
+   "explanation": "It classifies the opinion expressed in text."
+  },
+  {
+   "question": "What is stemming?",
+   "options": [
+    "Reducing words to a root form such as 'running' → 'run'",
+    "Adding punctuation",
+    "Translating words",
+    "Counting characters"
+   ],
+   "answer": "Reducing words to a root form such as 'running' → 'run'",
+   "explanation": "Stemming trims words to a base form."
+  },
+  {
+   "question": "Which model family powers modern large language models?",
+   "options": [
+    "Transformers",
+    "Decision stumps",
+    "K-means",
+    "Apriori"
+   ],
+   "answer": "Transformers",
+   "explanation": "Transformers use attention to model language."
+  }
+ ],
+ "Statistics": [
+  {
+   "question": "What is the median of 3, 7, 9, 12, 20?",
+   "options": [
+    "9",
+    "10.2",
+    "12",
+    "7"
+   ],
+   "answer": "9",
+   "explanation": "The middle value of the ordered list is 9."
+  },
+  {
+   "question": "What does standard deviation measure?",
+   "options": [
+    "Spread of data around the mean",
+    "The most frequent value",
+    "The middle value",
+    "The largest value"
+   ],
+   "answer": "Spread of data around the mean",
+   "explanation": "Standard deviation quantifies variability."
+  },
+  {
+   "question": "A p-value below 0.05 usually means…",
+   "options": [
+    "The result is statistically significant at the 5% level",
+    "The null hypothesis is certainly true",
+    "The sample is too small",
+    "The effect is large"
+   ],
+   "answer": "The result is statistically significant at the 5% level",
+   "explanation": "It suggests evidence against the null hypothesis."
+  },
+  {
+   "question": "Correlation between two variables does NOT imply…",
+   "options": [
+    "Causation",
+    "A relationship",
+    "Co-movement",
+    "Linear association"
+   ],
+   "answer": "Causation",
+   "explanation": "Correlated variables may share a hidden cause."
+  },
+  {
+   "question": "In a normal distribution about what percent of data lies within 1 standard deviation of the mean?",
+   "options": [
+    "68%",
+    "50%",
+    "95%",
+    "99.7%"
+   ],
+   "answer": "68%",
+   "explanation": "The 68-95-99.7 rule."
+  },
+  {
+   "question": "Which is a measure of central tendency?",
+   "options": [
+    "Mean",
+    "Variance",
+    "Range",
+    "Standard error"
+   ],
+   "answer": "Mean",
+   "explanation": "Mean, median and mode describe the centre."
+  }
+ ],
+ "Excel": [
+  {
+   "question": "Which function adds up a range of cells?",
+   "options": [
+    "SUM",
+    "ADD",
+    "TOTAL",
+    "PLUS"
+   ],
+   "answer": "SUM",
+   "explanation": "=SUM(A1:A10) adds the range."
+  },
+  {
+   "question": "Which function looks up a value in the first column of a table and returns a value from another column?",
+   "options": [
+    "VLOOKUP",
+    "COUNTIF",
+    "CONCAT",
+    "ROUND"
+   ],
+   "answer": "VLOOKUP",
+   "explanation": "VLOOKUP searches the first column of a range."
+  },
+  {
+   "question": "What does an absolute cell reference like $A$1 do?",
+   "options": [
+    "Stays fixed when the formula is copied",
+    "Changes when copied",
+    "Hides the cell",
+    "Locks the sheet"
+   ],
+   "answer": "Stays fixed when the formula is copied",
+   "explanation": "The $ signs lock the row and column."
+  },
+  {
+   "question": "Which tool summarises large datasets by dragging fields into rows, columns and values?",
+   "options": [
+    "PivotTable",
+    "Data Validation",
+    "Goal Seek",
+    "Flash Fill"
+   ],
+   "answer": "PivotTable",
+   "explanation": "PivotTables aggregate data interactively."
+  },
+  {
+   "question": "Which formula counts cells that meet a condition?",
+   "options": [
+    "COUNTIF",
+    "COUNTA only",
+    "SUMPRODUCT only",
+    "IFERROR"
+   ],
+   "answer": "COUNTIF",
+   "explanation": "COUNTIF counts cells matching a criterion."
+  },
+  {
+   "question": "Which feature highlights cells automatically based on their values?",
+   "options": [
+    "Conditional Formatting",
+    "Freeze Panes",
+    "Text to Columns",
+    "Protect Sheet"
+   ],
+   "answer": "Conditional Formatting",
+   "explanation": "Conditional formatting applies rules to style cells."
+  }
+ ],
+ "Data Visualization": [
+  {
+   "question": "Which chart is best for showing a trend over time?",
+   "options": [
+    "Line chart",
+    "Pie chart",
+    "Scatter of categories",
+    "Treemap"
+   ],
+   "answer": "Line chart",
+   "explanation": "Line charts show change across a continuous time axis."
+  },
+  {
+   "question": "Which chart best shows parts of a whole with only a few categories?",
+   "options": [
+    "Pie or donut chart",
+    "Line chart",
+    "Histogram",
+    "Box plot"
+   ],
+   "answer": "Pie or donut chart",
+   "explanation": "Pie charts show proportions when categories are few."
+  },
+  {
+   "question": "A scatter plot is mainly used to show…",
+   "options": [
+    "The relationship between two numeric variables",
+    "Parts of a whole",
+    "Changes over months",
+    "Rankings of categories"
+   ],
+   "answer": "The relationship between two numeric variables",
+   "explanation": "Each point is an (x, y) observation."
+  },
+  {
+   "question": "Why should bar chart axes normally start at zero?",
+   "options": [
+    "Bar length represents value, so truncating exaggerates differences",
+    "It makes the chart colourful",
+    "It reduces file size",
+    "Software requires it"
+   ],
+   "answer": "Bar length represents value, so truncating exaggerates differences",
+   "explanation": "A truncated axis misleads about relative size."
+  },
+  {
+   "question": "What does a histogram display?",
+   "options": [
+    "The distribution of a numeric variable in bins",
+    "Categories as slices",
+    "Correlation between three variables",
+    "Geographic data"
+   ],
+   "answer": "The distribution of a numeric variable in bins",
+   "explanation": "Histograms count values falling into ranges."
+  },
+  {
+   "question": "Which is good dashboard design practice?",
+   "options": [
+    "Limit clutter and highlight the key metrics",
+    "Use as many colours as possible",
+    "Show every column in the data",
+    "Use 3D effects on all charts"
+   ],
+   "answer": "Limit clutter and highlight the key metrics",
+   "explanation": "Clear, focused visuals communicate better."
+  }
+ ],
+ "Big Data": [
+  {
+   "question": "Which of these is one of the classic 'Vs' of big data?",
+   "options": [
+    "Volume",
+    "Validity of syntax",
+    "Visibility",
+    "Vendor"
+   ],
+   "answer": "Volume",
+   "explanation": "Volume, Velocity and Variety are the core Vs."
+  },
+  {
+   "question": "What is Hadoop's distributed file system called?",
+   "options": [
+    "HDFS",
+    "NTFS",
+    "FAT32",
+    "EXT4"
+   ],
+   "answer": "HDFS",
+   "explanation": "HDFS stores data across a cluster."
+  },
+  {
+   "question": "Which programming model processes large datasets in parallel with map and reduce steps?",
+   "options": [
+    "MapReduce",
+    "REST",
+    "MVC",
+    "CRUD"
+   ],
+   "answer": "MapReduce",
+   "explanation": "MapReduce splits work across nodes."
+  },
+  {
+   "question": "Apache Spark is mainly used for…",
+   "options": [
+    "Fast distributed data processing",
+    "Designing logos",
+    "Sending email",
+    "Version control"
+   ],
+   "answer": "Fast distributed data processing",
+   "explanation": "Spark processes data in memory across clusters."
+  },
+  {
+   "question": "What does 'Velocity' refer to in big data?",
+   "options": [
+    "The speed at which data is generated and processed",
+    "The size of the data",
+    "The variety of formats",
+    "The cost of storage"
+   ],
+   "answer": "The speed at which data is generated and processed",
+   "explanation": "Velocity is about data arriving quickly."
+  },
+  {
+   "question": "Which kind of database is commonly used for flexible, large-scale, non-tabular data?",
+   "options": [
+    "NoSQL database",
+    "Spreadsheet",
+    "Text editor",
+    "Compiler"
+   ],
+   "answer": "NoSQL database",
+   "explanation": "NoSQL stores scale horizontally and handle varied schemas."
+  }
+ ],
+ "Data Engineering": [
+  {
+   "question": "What does ETL stand for?",
+   "options": [
+    "Extract, Transform, Load",
+    "Evaluate, Test, Launch",
+    "Encode, Transfer, Link",
+    "Edit, Translate, Learn"
+   ],
+   "answer": "Extract, Transform, Load",
+   "explanation": "ETL moves data from sources into a warehouse."
+  },
+  {
+   "question": "What is a data warehouse?",
+   "options": [
+    "A central store of structured data for analytics",
+    "A tool to draw charts",
+    "A programming language",
+    "A backup of source code"
+   ],
+   "answer": "A central store of structured data for analytics",
+   "explanation": "Warehouses are optimised for analytical queries."
+  },
+  {
+   "question": "Which tool is commonly used to schedule and orchestrate data pipelines?",
+   "options": [
+    "Apache Airflow",
+    "Photoshop",
+    "Figma",
+    "Postman only"
+   ],
+   "answer": "Apache Airflow",
+   "explanation": "Airflow defines workflows as DAGs."
+  },
+  {
+   "question": "What is a data pipeline?",
+   "options": [
+    "An automated flow that moves and transforms data between systems",
+    "A type of chart",
+    "A machine-learning model",
+    "A database index"
+   ],
+   "answer": "An automated flow that moves and transforms data between systems",
+   "explanation": "Pipelines automate data movement."
+  },
+  {
+   "question": "Why is data quality validation important in pipelines?",
+   "options": [
+    "Bad data produces wrong analytics downstream",
+    "It makes the pipeline slower on purpose",
+    "It is required by SQL",
+    "It reduces storage bills only"
+   ],
+   "answer": "Bad data produces wrong analytics downstream",
+   "explanation": "Garbage in, garbage out."
+  },
+  {
+   "question": "Batch processing differs from streaming in that batch…",
+   "options": [
+    "Processes data in scheduled chunks",
+    "Processes each event instantly",
+    "Never stores data",
+    "Only works with images"
+   ],
+   "answer": "Processes data in scheduled chunks",
+   "explanation": "Streaming handles events continuously."
+  }
+ ],
+ "Cloud Computing": [
+  {
+   "question": "Which service model provides virtual machines and networking you manage yourself?",
+   "options": [
+    "IaaS",
+    "SaaS",
+    "FaaS only",
+    "DaaS only"
+   ],
+   "answer": "IaaS",
+   "explanation": "Infrastructure as a Service gives raw compute and storage."
+  },
+  {
+   "question": "Gmail is an example of which model?",
+   "options": [
+    "SaaS",
+    "IaaS",
+    "On-premise",
+    "Bare metal"
+   ],
+   "answer": "SaaS",
+   "explanation": "Software delivered over the internet is SaaS."
+  },
+  {
+   "question": "What is elasticity in the cloud?",
+   "options": [
+    "Automatically scaling resources up and down with demand",
+    "Having unlimited free storage",
+    "Using only one server",
+    "Encrypting all data"
+   ],
+   "answer": "Automatically scaling resources up and down with demand",
+   "explanation": "Elastic resources match load."
+  },
+  {
+   "question": "Which is a public cloud provider?",
+   "options": [
+    "Amazon Web Services",
+    "Linux kernel",
+    "GitHub Desktop",
+    "Notepad"
+   ],
+   "answer": "Amazon Web Services",
+   "explanation": "AWS, Azure and Google Cloud are public clouds."
+  },
+  {
+   "question": "What is a benefit of pay-as-you-go pricing?",
+   "options": [
+    "You pay only for resources you use",
+    "Prices never change",
+    "No internet is required",
+    "Hardware is owned by you"
+   ],
+   "answer": "You pay only for resources you use",
+   "explanation": "Usage-based billing reduces upfront cost."
+  },
+  {
+   "question": "What does a region/availability zone design help with?",
+   "options": [
+    "Resilience and low latency",
+    "Writing code faster",
+    "Designing UI",
+    "Spell checking"
+   ],
+   "answer": "Resilience and low latency",
+   "explanation": "Spreading workloads across locations improves availability."
+  }
+ ],
+ "DevOps": [
+  {
+   "question": "What does CI/CD stand for?",
+   "options": [
+    "Continuous Integration / Continuous Delivery",
+    "Code Inspection / Code Debugging",
+    "Central Index / Central Data",
+    "Container Image / Container Deploy"
+   ],
+   "answer": "Continuous Integration / Continuous Delivery",
+   "explanation": "CI/CD automates building, testing and releasing."
+  },
+  {
+   "question": "Which tool is used to package applications into containers?",
+   "options": [
+    "Docker",
+    "Excel",
+    "Photoshop",
+    "Slack"
+   ],
+   "answer": "Docker",
+   "explanation": "Docker builds and runs containers."
+  },
+  {
+   "question": "What is Infrastructure as Code?",
+   "options": [
+    "Managing infrastructure with versioned configuration files",
+    "Writing documentation only",
+    "Hand-configuring servers",
+    "A type of database"
+   ],
+   "answer": "Managing infrastructure with versioned configuration files",
+   "explanation": "Tools like Terraform define infrastructure in code."
+  },
+  {
+   "question": "Kubernetes is mainly used to…",
+   "options": [
+    "Orchestrate and scale containers",
+    "Edit images",
+    "Write unit tests",
+    "Design databases"
+   ],
+   "answer": "Orchestrate and scale containers",
+   "explanation": "Kubernetes manages containerised workloads."
+  },
+  {
+   "question": "What is the main goal of DevOps?",
+   "options": [
+    "Faster, more reliable software delivery through collaboration and automation",
+    "Replacing developers",
+    "Avoiding testing",
+    "Reducing the number of servers to zero"
+   ],
+   "answer": "Faster, more reliable software delivery through collaboration and automation",
+   "explanation": "It bridges development and operations."
+  },
+  {
+   "question": "Why do teams monitor applications in production?",
+   "options": [
+    "To detect and fix issues quickly",
+    "To increase code size",
+    "To avoid deployments",
+    "To delete logs"
+   ],
+   "answer": "To detect and fix issues quickly",
+   "explanation": "Monitoring gives visibility into health and performance."
+  }
+ ],
+ "Network administration": [
+  {
+   "question": "Which protocol assigns IP addresses automatically?",
+   "options": [
+    "DHCP",
+    "DNS",
+    "FTP",
+    "SMTP"
+   ],
+   "answer": "DHCP",
+   "explanation": "DHCP hands out IP configuration to devices."
+  },
+  {
+   "question": "What does DNS do?",
+   "options": [
+    "Translates domain names to IP addresses",
+    "Encrypts web traffic",
+    "Assigns MAC addresses",
+    "Blocks viruses"
+   ],
+   "answer": "Translates domain names to IP addresses",
+   "explanation": "DNS is the internet's phone book."
+  },
+  {
+   "question": "Which device forwards traffic between different networks?",
+   "options": [
+    "Router",
+    "Hub",
+    "Repeater",
+    "Patch panel"
+   ],
+   "answer": "Router",
+   "explanation": "Routers connect networks and route packets."
+  },
+  {
+   "question": "How many bits are in an IPv4 address?",
+   "options": [
+    "32",
+    "64",
+    "128",
+    "16"
+   ],
+   "answer": "32",
+   "explanation": "IPv4 uses 32 bits; IPv6 uses 128."
+  },
+  {
+   "question": "Which port does HTTPS use by default?",
+   "options": [
+    "443",
+    "80",
+    "21",
+    "25"
+   ],
+   "answer": "443",
+   "explanation": "HTTPS runs on TCP 443."
+  },
+  {
+   "question": "What is the purpose of a firewall?",
+   "options": [
+    "Filter network traffic based on security rules",
+    "Speed up Wi-Fi",
+    "Store files",
+    "Assign domain names"
+   ],
+   "answer": "Filter network traffic based on security rules",
+   "explanation": "Firewalls allow or block traffic by policy."
+  }
+ ],
+ "Troubleshooting": [
+  {
+   "question": "What is a sensible FIRST step when troubleshooting a problem?",
+   "options": [
+    "Identify and define the problem",
+    "Replace all hardware",
+    "Reinstall the operating system",
+    "Ignore the user"
+   ],
+   "answer": "Identify and define the problem",
+   "explanation": "Understand the symptoms before acting."
+  },
+  {
+   "question": "A user cannot reach any website but can ping a local printer. Which is the most likely area to check?",
+   "options": [
+    "DNS or internet gateway settings",
+    "Printer toner",
+    "Keyboard layout",
+    "Screen brightness"
+   ],
+   "answer": "DNS or internet gateway settings",
+   "explanation": "Local network works; external/name resolution fails."
+  },
+  {
+   "question": "Why change only one thing at a time when troubleshooting?",
+   "options": [
+    "So you know which change fixed or caused the issue",
+    "It is faster to type",
+    "Rules require it",
+    "It avoids documentation"
+   ],
+   "answer": "So you know which change fixed or caused the issue",
+   "explanation": "Single changes keep cause and effect clear."
+  },
+  {
+   "question": "After resolving an issue you should…",
+   "options": [
+    "Document the problem and the solution",
+    "Delete the logs",
+    "Close the ticket without telling the user",
+    "Restart every device"
+   ],
+   "answer": "Document the problem and the solution",
+   "explanation": "Documentation helps future troubleshooting."
+  },
+  {
+   "question": "A PC won't power on. What should you check first?",
+   "options": [
+    "Power cable and outlet",
+    "Browser history",
+    "Wallpaper",
+    "Software licences"
+   ],
+   "answer": "Power cable and outlet",
+   "explanation": "Start with the simplest, most common cause."
+  },
+  {
+   "question": "What does 'establish a theory of probable cause' mean?",
+   "options": [
+    "Form an educated guess of what is wrong, then test it",
+    "Blame the user",
+    "Reboot at random",
+    "Order new equipment"
+   ],
+   "answer": "Form an educated guess of what is wrong, then test it",
+   "explanation": "Theories are tested to confirm or rule out causes."
+  }
+ ],
+ "Communication": [
+  {
+   "question": "What is active listening?",
+   "options": [
+    "Fully concentrating, understanding and responding to the speaker",
+    "Waiting for your turn to talk",
+    "Interrupting to share your view",
+    "Looking at your phone while nodding"
+   ],
+   "answer": "Fully concentrating, understanding and responding to the speaker",
+   "explanation": "Active listening involves attention and feedback."
+  },
+  {
+   "question": "Which is an example of non-verbal communication?",
+   "options": [
+    "Eye contact and body posture",
+    "A written email",
+    "A phone call transcript",
+    "A report"
+   ],
+   "answer": "Eye contact and body posture",
+   "explanation": "Body language communicates without words."
+  },
+  {
+   "question": "A clear message should be…",
+   "options": [
+    "Concise and tailored to the audience",
+    "As long as possible",
+    "Full of jargon",
+    "Vague so nobody disagrees"
+   ],
+   "answer": "Concise and tailored to the audience",
+   "explanation": "Clarity and audience awareness matter."
+  },
+  {
+   "question": "What is the best way to give constructive feedback?",
+   "options": [
+    "Be specific, focus on behaviour and suggest improvements",
+    "Criticise the person's character",
+    "Do it publicly",
+    "Stay vague"
+   ],
+   "answer": "Be specific, focus on behaviour and suggest improvements",
+   "explanation": "Specific, respectful feedback is actionable."
+  },
+  {
+   "question": "Which channel suits a sensitive, complex conversation best?",
+   "options": [
+    "A face-to-face or video conversation",
+    "A group chat emoji",
+    "A mass email",
+    "A social media post"
+   ],
+   "answer": "A face-to-face or video conversation",
+   "explanation": "Rich channels reduce misunderstanding."
+  },
+  {
+   "question": "Asking open-ended questions helps to…",
+   "options": [
+    "Draw out more information and views",
+    "Get one-word answers",
+    "End the conversation faster",
+    "Avoid listening"
+   ],
+   "answer": "Draw out more information and views",
+   "explanation": "Open questions invite detail."
+  }
+ ],
+ "Leadership": [
+  {
+   "question": "Which best describes a servant leader?",
+   "options": [
+    "Puts the team's needs and growth first",
+    "Takes credit for the team's work",
+    "Avoids decisions",
+    "Controls every task"
+   ],
+   "answer": "Puts the team's needs and growth first",
+   "explanation": "Servant leadership focuses on enabling others."
+  },
+  {
+   "question": "What does delegation involve?",
+   "options": [
+    "Assigning tasks with clear expectations and authority",
+    "Doing everything yourself",
+    "Giving tasks without instructions",
+    "Removing accountability"
+   ],
+   "answer": "Assigning tasks with clear expectations and authority",
+   "explanation": "Good delegation builds capacity and trust."
+  },
+  {
+   "question": "A leader's best response to team conflict is to…",
+   "options": [
+    "Address it early and help find a fair resolution",
+    "Ignore it until it passes",
+    "Take sides immediately",
+    "Punish everyone involved"
+   ],
+   "answer": "Address it early and help find a fair resolution",
+   "explanation": "Early, fair mediation prevents escalation."
+  },
+  {
+   "question": "What is the purpose of a team vision?",
+   "options": [
+    "Give direction and motivate people toward shared goals",
+    "Increase paperwork",
+    "Replace daily tasks",
+    "Set individual salaries"
+   ],
+   "answer": "Give direction and motivate people toward shared goals",
+   "explanation": "A vision aligns effort."
+  },
+  {
+   "question": "Which practice builds trust in a team?",
+   "options": [
+    "Being consistent, honest and transparent",
+    "Changing decisions without explanation",
+    "Hiding mistakes",
+    "Playing favourites"
+   ],
+   "answer": "Being consistent, honest and transparent",
+   "explanation": "Trust grows from reliability and openness."
+  },
+  {
+   "question": "SMART goals are…",
+   "options": [
+    "Specific, Measurable, Achievable, Relevant, Time-bound",
+    "Simple, Mandatory, Annual, Ranked, Tested",
+    "Short, Mixed, Agile, Rapid, Tracked",
+    "Strategic, Managed, Approved, Reviewed, Timed"
+   ],
+   "answer": "Specific, Measurable, Achievable, Relevant, Time-bound",
+   "explanation": "SMART is the standard goal-setting framework."
+  }
+ ],
+ "Project Management": [
+  {
+   "question": "What are the typical constraints in the 'triple constraint' of project management?",
+   "options": [
+    "Scope, time and cost",
+    "People, place and product",
+    "Risk, reward and reporting",
+    "Design, code and test"
+   ],
+   "answer": "Scope, time and cost",
+   "explanation": "Scope, time and cost (with quality at the centre)."
+  },
+  {
+   "question": "What is a project stakeholder?",
+   "options": [
+    "Anyone affected by or able to influence the project",
+    "Only the project manager",
+    "Only the customer",
+    "Only the developers"
+   ],
+   "answer": "Anyone affected by or able to influence the project",
+   "explanation": "Stakeholders include sponsors, users, team and others."
+  },
+  {
+   "question": "What does a Gantt chart show?",
+   "options": [
+    "Tasks scheduled over time with dependencies",
+    "Team salaries",
+    "Code quality",
+    "Customer feedback"
+   ],
+   "answer": "Tasks scheduled over time with dependencies",
+   "explanation": "Gantt charts visualise a project schedule."
+  },
+  {
+   "question": "In Agile, what is a sprint?",
+   "options": [
+    "A short, time-boxed period to deliver a set of work",
+    "A final project review",
+    "A budget approval",
+    "A type of risk"
+   ],
+   "answer": "A short, time-boxed period to deliver a set of work",
+   "explanation": "Sprints are typically 1–4 weeks."
+  },
+  {
+   "question": "What is risk management?",
+   "options": [
+    "Identifying, assessing and responding to potential problems",
+    "Avoiding all change",
+    "Only fixing bugs",
+    "Ignoring uncertainty"
+   ],
+   "answer": "Identifying, assessing and responding to potential problems",
+   "explanation": "Proactive handling of uncertainty."
+  },
+  {
+   "question": "What is the 'critical path'?",
+   "options": [
+    "The longest sequence of dependent tasks that determines the project duration",
+    "The cheapest tasks",
+    "The most difficult tasks",
+    "The tasks done by seniors"
+   ],
+   "answer": "The longest sequence of dependent tasks that determines the project duration",
+   "explanation": "Delays on it delay the whole project."
+  }
+ ],
+ "Customer service": [
+  {
+   "question": "An upset customer calls. What should you do first?",
+   "options": [
+    "Listen calmly and acknowledge their concern",
+    "Interrupt with policy details",
+    "Transfer them immediately",
+    "Argue the facts"
+   ],
+   "answer": "Listen calmly and acknowledge their concern",
+   "explanation": "Empathy de-escalates the situation."
+  },
+  {
+   "question": "Which phrase shows empathy?",
+   "options": [
+    "I understand why that's frustrating; let me help.",
+    "That's not my problem.",
+    "You should have read the terms.",
+    "Calm down."
+   ],
+   "answer": "I understand why that's frustrating; let me help.",
+   "explanation": "Acknowledging feelings builds rapport."
+  },
+  {
+   "question": "What should you do if you don't know the answer?",
+   "options": [
+    "Be honest and find out or escalate, then follow up",
+    "Guess confidently",
+    "Hang up",
+    "Blame another department"
+   ],
+   "answer": "Be honest and find out or escalate, then follow up",
+   "explanation": "Honesty and follow-through preserve trust."
+  },
+  {
+   "question": "First-contact resolution means…",
+   "options": [
+    "Solving the customer's issue in the first interaction",
+    "Answering within one minute only",
+    "Selling an upgrade",
+    "Closing tickets automatically"
+   ],
+   "answer": "Solving the customer's issue in the first interaction",
+   "explanation": "Fewer repeat contacts improves satisfaction."
+  },
+  {
+   "question": "Which metric measures how satisfied customers are after an interaction?",
+   "options": [
+    "CSAT",
+    "ROI",
+    "EBITDA",
+    "API"
+   ],
+   "answer": "CSAT",
+   "explanation": "Customer Satisfaction Score."
+  },
+  {
+   "question": "Good written support replies should be…",
+   "options": [
+    "Clear, polite and solution-focused",
+    "Long and technical",
+    "Informal slang only",
+    "Written in capital letters"
+   ],
+   "answer": "Clear, polite and solution-focused",
+   "explanation": "Customers want clear next steps."
+  }
+ ],
+ "Negotiation": [
+  {
+   "question": "What is a BATNA?",
+   "options": [
+    "Best Alternative To a Negotiated Agreement",
+    "Basic Agreement To Negotiate Always",
+    "Best Approach To Negotiate Anything",
+    "Binding Agreement Terms Not Agreed"
+   ],
+   "answer": "Best Alternative To a Negotiated Agreement",
+   "explanation": "Your BATNA is your fallback if talks fail."
+  },
+  {
+   "question": "A win-win negotiation aims to…",
+   "options": [
+    "Find an outcome that benefits both parties",
+    "Defeat the other side",
+    "Avoid agreement",
+    "Hide all information"
+   ],
+   "answer": "Find an outcome that benefits both parties",
+   "explanation": "Integrative bargaining creates shared value."
+  },
+  {
+   "question": "Why prepare before negotiating?",
+   "options": [
+    "Knowing your goals, limits and the other side's interests improves outcomes",
+    "To avoid listening",
+    "To bluff better",
+    "It is not needed"
+   ],
+   "answer": "Knowing your goals, limits and the other side's interests improves outcomes",
+   "explanation": "Preparation is the strongest lever."
+  },
+  {
+   "question": "Focusing on interests rather than positions means…",
+   "options": [
+    "Understanding the underlying needs behind demands",
+    "Repeating your demand louder",
+    "Giving up quickly",
+    "Ignoring the other party"
+   ],
+   "answer": "Understanding the underlying needs behind demands",
+   "explanation": "Interests reveal creative solutions."
+  },
+  {
+   "question": "What is anchoring?",
+   "options": [
+    "Making the first offer to set the reference point",
+    "Refusing to talk",
+    "Ending a negotiation",
+    "Splitting the difference always"
+   ],
+   "answer": "Making the first offer to set the reference point",
+   "explanation": "The first number influences the range of discussion."
+  },
+  {
+   "question": "What should you do when the other side makes a strong objection?",
+   "options": [
+    "Listen, clarify and respond with reasons or options",
+    "Walk out immediately",
+    "Raise your voice",
+    "Ignore it"
+   ],
+   "answer": "Listen, clarify and respond with reasons or options",
+   "explanation": "Understanding objections moves talks forward."
+  }
+ ],
+ "Financial Analysis": [
+  {
+   "question": "Which statement shows a company's revenues and expenses over a period?",
+   "options": [
+    "Income statement",
+    "Balance sheet",
+    "Cash receipt",
+    "Trial balance only"
+   ],
+   "answer": "Income statement",
+   "explanation": "The income statement reports profit or loss."
+  },
+  {
+   "question": "Assets = ?",
+   "options": [
+    "Liabilities + Equity",
+    "Revenue − Expenses",
+    "Cash + Debt",
+    "Profit × 2"
+   ],
+   "answer": "Liabilities + Equity",
+   "explanation": "The accounting equation."
+  },
+  {
+   "question": "What does the current ratio measure?",
+   "options": [
+    "Ability to pay short-term obligations",
+    "Long-term growth",
+    "Profit margin",
+    "Market share"
+   ],
+   "answer": "Ability to pay short-term obligations",
+   "explanation": "Current assets divided by current liabilities."
+  },
+  {
+   "question": "Net profit margin is calculated as…",
+   "options": [
+    "Net profit ÷ revenue",
+    "Revenue ÷ assets",
+    "Assets ÷ equity",
+    "Debt ÷ revenue"
+   ],
+   "answer": "Net profit ÷ revenue",
+   "explanation": "It shows profit earned per unit of revenue."
+  },
+  {
+   "question": "Which statement reports the actual inflow and outflow of cash?",
+   "options": [
+    "Cash flow statement",
+    "Income statement",
+    "Statement of equity only",
+    "Budget"
+   ],
+   "answer": "Cash flow statement",
+   "explanation": "It tracks operating, investing and financing cash."
+  },
+  {
+   "question": "What is depreciation?",
+   "options": [
+    "Spreading the cost of an asset over its useful life",
+    "Increase in an asset's value",
+    "Cash paid to suppliers",
+    "A type of tax refund"
+   ],
+   "answer": "Spreading the cost of an asset over its useful life",
+   "explanation": "It allocates the cost of long-lived assets."
+  }
+ ],
+ "Sales": [
+  {
+   "question": "What is the purpose of qualifying a lead?",
+   "options": [
+    "To decide whether the prospect has the need, budget and authority to buy",
+    "To send more emails",
+    "To lower the price",
+    "To close immediately"
+   ],
+   "answer": "To decide whether the prospect has the need, budget and authority to buy",
+   "explanation": "Qualification focuses effort on good prospects."
+  },
+  {
+   "question": "Which approach is the most effective when discovering customer needs?",
+   "options": [
+    "Ask open questions and listen",
+    "Pitch features immediately",
+    "Talk about yourself",
+    "Offer a discount first"
+   ],
+   "answer": "Ask open questions and listen",
+   "explanation": "Discovery uncovers real problems to solve."
+  },
+  {
+   "question": "What is an objection in sales?",
+   "options": [
+    "A concern or hesitation the prospect raises",
+    "A completed sale",
+    "A contract clause",
+    "A marketing slogan"
+   ],
+   "answer": "A concern or hesitation the prospect raises",
+   "explanation": "Objections should be explored, not avoided."
+  },
+  {
+   "question": "A 'value proposition' explains…",
+   "options": [
+    "Why a customer should choose your product over alternatives",
+    "How much commission you earn",
+    "Your company's history only",
+    "The delivery schedule"
+   ],
+   "answer": "Why a customer should choose your product over alternatives",
+   "explanation": "It states the benefit and differentiation."
+  },
+  {
+   "question": "What does CRM software help with?",
+   "options": [
+    "Tracking customer interactions and the sales pipeline",
+    "Editing video",
+    "Designing circuits",
+    "Compiling code"
+   ],
+   "answer": "Tracking customer interactions and the sales pipeline",
+   "explanation": "Customer Relationship Management organises sales data."
+  },
+  {
+   "question": "Following up after a meeting is important because…",
+   "options": [
+    "It keeps momentum and shows commitment",
+    "It annoys customers",
+    "It is optional and rarely helps",
+    "It replaces the proposal"
+   ],
+   "answer": "It keeps momentum and shows commitment",
+   "explanation": "Consistent follow-up increases conversion."
+  }
+ ],
+ "Human Resources Management": [
+  {
+   "question": "What is the main purpose of a job description?",
+   "options": [
+    "To define a role's duties, requirements and expectations",
+    "To set the company's profit",
+    "To record holidays",
+    "To plan the office layout"
+   ],
+   "answer": "To define a role's duties, requirements and expectations",
+   "explanation": "It guides recruiting and performance management."
+  },
+  {
+   "question": "Which is a fair way to reduce bias in hiring?",
+   "options": [
+    "Use structured interviews with the same questions for all candidates",
+    "Hire based on gut feeling",
+    "Prefer friends' referrals only",
+    "Skip reference checks"
+   ],
+   "answer": "Use structured interviews with the same questions for all candidates",
+   "explanation": "Structure improves consistency and fairness."
+  },
+  {
+   "question": "What is onboarding?",
+   "options": [
+    "Integrating new hires into the organisation and their role",
+    "Terminating employment",
+    "Annual salary review",
+    "A type of training budget"
+   ],
+   "answer": "Integrating new hires into the organisation and their role",
+   "explanation": "Good onboarding improves retention."
+  },
+  {
+   "question": "A performance appraisal is used to…",
+   "options": [
+    "Review and discuss an employee's performance and development",
+    "Calculate taxes",
+    "Order office supplies",
+    "Recruit interns"
+   ],
+   "answer": "Review and discuss an employee's performance and development",
+   "explanation": "Appraisals give feedback and set goals."
+  },
+  {
+   "question": "Employee turnover refers to…",
+   "options": [
+    "The rate at which employees leave and are replaced",
+    "Daily working hours",
+    "Number of departments",
+    "Training costs only"
+   ],
+   "answer": "The rate at which employees leave and are replaced",
+   "explanation": "High turnover can signal engagement problems."
+  },
+  {
+   "question": "Why do organisations keep HR policies and records confidential where required?",
+   "options": [
+    "To protect employee privacy and comply with law",
+    "To hide salaries from tax authorities",
+    "To reduce hiring",
+    "To avoid onboarding"
+   ],
+   "answer": "To protect employee privacy and comply with law",
+   "explanation": "Privacy and legal compliance are core HR duties."
+  }
+ ]
+}
