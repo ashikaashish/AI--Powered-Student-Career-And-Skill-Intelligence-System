@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Search, DollarSign, TrendingUp, Bot } from "lucide-react";
 import client from "../api/client";
 import { Layout, Card, PageHeader, Loading } from "../components/Layout";
+import LiveJobs from "../components/LiveJobs";
 
 export default function JobExplorer() {
   const [jobs, setJobs] = useState([]);
@@ -9,6 +10,7 @@ export default function JobExplorer() {
   const [category, setCategory] = useState("All");
   const [selected, setSelected] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [tab, setTab] = useState("live");
 
   const search = (q) => {
     setLoading(true);
@@ -33,8 +35,28 @@ export default function JobExplorer() {
 
   return (
     <Layout>
-      <PageHeader title="Job Role Explorer" subtitle="Explore real job roles, drawn from live postings, and their required skills" />
+      <PageHeader title="Job Explorer" subtitle="Current openings that match your profile skills, and the skills each role needs" />
 
+      <div className="flex gap-2 mb-5">
+        {[["live", "Openings for your skills"], ["roles", "Role explorer"]].map(([key, label]) => (
+          <button
+            key={key}
+            onClick={() => setTab(key)}
+            className={`text-sm font-semibold px-4 py-2 rounded-full border transition-colors ${
+              tab === key
+                ? "bg-primary-600 border-primary-600 text-white"
+                : "bg-white border-slate-200 text-slate-600 hover:bg-slate-50"
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {tab === "live" ? (
+        <LiveJobs />
+      ) : (
+      <>
       <div className="relative mb-3">
         <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
         <input
@@ -131,6 +153,8 @@ export default function JobExplorer() {
             )}
           </Card>
         </div>
+      )}
+      </>
       )}
     </Layout>
   );
