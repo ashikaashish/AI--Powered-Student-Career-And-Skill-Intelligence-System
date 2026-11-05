@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Star, CheckCircle2, PlayCircle, Clock, Film, Sparkles, ClipboardCheck, Search, X } from "lucide-react";
+import { Star, Award, CheckCircle2, PlayCircle, Clock, Film, Sparkles, ClipboardCheck, Search, X } from "lucide-react";
 import client from "../api/client";
 import { Layout, Card, PageHeader, Loading, ProgressBar, Badge } from "../components/Layout";
 import { formatDuration } from "../utils/format";
@@ -174,6 +174,15 @@ export default function Courses() {
                       <ClipboardCheck size={13} /> Take assessment
                     </button>
                   ) : enrolled ? (
+                    <>
+                    {isCompleted && (
+                      <button
+                        onClick={() => navigate(`/certificates/${c.id}`)}
+                        className="flex items-center gap-1 text-xs font-semibold px-3 py-1.5 rounded-md bg-amber-500 text-white hover:bg-amber-600"
+                      >
+                        <Award size={13} /> Certificate
+                      </button>
+                    )}
                     <button
                       onClick={() => navigate(`/courses/${c.id}/learn`)}
                       className="flex items-center gap-1 text-xs font-semibold px-3 py-1.5 rounded-md bg-primary-600 text-white hover:bg-primary-700"
@@ -184,6 +193,7 @@ export default function Courses() {
                         <><PlayCircle size={13} /> {watchPercent > 0 ? "Continue" : "Start"}</>
                       )}
                     </button>
+                    </>
                   ) : (
                     <button
                       onClick={() => handleEnroll(c)}

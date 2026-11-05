@@ -22,7 +22,7 @@ def get_progress():
     ).fetchone()["c"]
 
     recent = db.execute(
-        """SELECT c.title, uc.completed_at FROM user_courses uc
+        """SELECT c.id AS course_id, c.title, uc.completed_at FROM user_courses uc
            JOIN courses c ON c.id = uc.course_id
            WHERE uc.user_id = ? AND uc.status = 'completed'
            ORDER BY uc.completed_at DESC LIMIT 5""",

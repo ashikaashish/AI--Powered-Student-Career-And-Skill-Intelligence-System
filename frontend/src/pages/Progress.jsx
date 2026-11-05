@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { BookOpen, Award, FolderCheck, Gauge, CheckCircle2 } from "lucide-react";
 import client from "../api/client";
 import { Layout, Card, PageHeader, Loading } from "../components/Layout";
@@ -51,8 +52,9 @@ export default function Progress() {
                     <CheckCircle2 size={16} className="text-teal-600" />
                     Completed "{a.title}"
                   </div>
-                  <span className="text-xs text-slate-400">
+                  <span className="text-xs text-slate-400 flex items-center gap-3">
                     {a.completed_at ? new Date(a.completed_at).toLocaleDateString() : ""}
+                    {a.course_id && <Link to={`/certificates/${a.course_id}`} className="text-amber-600 font-semibold hover:underline">Certificate</Link>}
                   </span>
                 </div>
               ))}

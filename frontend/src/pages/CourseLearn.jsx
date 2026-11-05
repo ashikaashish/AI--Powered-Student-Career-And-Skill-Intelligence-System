@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import {
-  ArrowLeft, CheckCircle2, Circle, PlayCircle, Lock, ChevronRight, Clock, ClipboardCheck, Play,
+  ArrowLeft, CheckCircle2, Circle, PlayCircle, Lock, ChevronRight, Clock, ClipboardCheck, Play, Award,
 } from "lucide-react";
 import client, { API_BASE_URL } from "../api/client";
 import { Layout, Card, Loading, ProgressBar, Badge } from "../components/Layout";
@@ -238,6 +238,19 @@ export default function CourseLearn() {
         </div>
         {status === "completed" && <Badge tone="teal"><CheckCircle2 size={13} /> Skill earned</Badge>}
       </div>
+
+      {status === "completed" && (
+        <div className="mb-5 rounded-2xl border border-amber-200 bg-gradient-to-br from-amber-50 to-white p-5 shadow-sm flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-start gap-3">
+            <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0"><Award size={20} /></div>
+            <div>
+              <p className="font-bold text-slate-800">You earned a certificate for this course</p>
+              <p className="text-sm text-slate-600 mt-0.5">View it, download it as a PDF or image, and share it.</p>
+            </div>
+          </div>
+          <Link to={`/certificates/${courseId}`} className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg">View certificate</Link>
+        </div>
+      )}
 
       {status === "watched" && (
         <div className="mb-5 rounded-2xl border border-primary-200 bg-gradient-to-br from-primary-50 to-white p-5 shadow-sm flex flex-wrap items-center justify-between gap-3">

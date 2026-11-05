@@ -15,6 +15,7 @@ import JobExplorer from "./pages/JobExplorer";
 import Chatbot from "./pages/Chatbot";
 import Progress from "./pages/Progress";
 import AptitudeQuiz from "./pages/AptitudeQuiz";
+import Certificates from "./pages/Certificates";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminStudents from "./pages/AdminStudents";
 import AdminCourses from "./pages/AdminCourses";
@@ -34,6 +35,8 @@ export default function App() {
           <Route path="/courses" element={<ProtectedRoute><Courses /></ProtectedRoute>} />
           <Route path="/courses/:courseId/learn" element={<ProtectedRoute><CourseLearn /></ProtectedRoute>} />
           <Route path="/courses/:courseId/assessment" element={<ProtectedRoute><CourseAssessment /></ProtectedRoute>} />
+          <Route path="/certificates" element={<ProtectedRoute><Certificates /></ProtectedRoute>} />
+          <Route path="/certificates/:courseId" element={<ProtectedRoute><Certificates /></ProtectedRoute>} />
           <Route path="/jobs" element={<ProtectedRoute><JobExplorer /></ProtectedRoute>} />
           <Route path="/chatbot" element={<ProtectedRoute><Chatbot /></ProtectedRoute>} />
           <Route path="/progress" element={<ProtectedRoute><Progress /></ProtectedRoute>} />

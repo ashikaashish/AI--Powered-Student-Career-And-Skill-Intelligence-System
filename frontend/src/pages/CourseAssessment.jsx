@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { ArrowLeft, CheckCircle2, XCircle, Sparkles, TrendingUp, ClipboardCheck, ShieldCheck, AlertTriangle } from "lucide-react";
 import client from "../api/client";
 import { Layout, Card, Loading } from "../components/Layout";
+import Certificate from "../components/Certificate";
 import ProctorPanel from "../components/ProctorPanel";
 import useProctoring from "../hooks/useProctoring";
 
@@ -144,6 +145,13 @@ export default function CourseAssessment() {
         <p className="mb-4 max-w-3xl text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2">{autoReason}</p>
       )}
       {result && <ResultCard result={result} course={course} onRetry={load} autoReason={autoReason} />}
+      {result?.passed && result.certificate && (
+        <div className="mb-6 max-w-4xl">
+          <p className="text-sm font-bold text-slate-800 mb-1">🎉 Congratulations! Your certificate is ready</p>
+          <p className="text-xs text-slate-500 mb-3">Download it as a PDF or image. You can always find it later under <Link to="/certificates" className="text-primary-600 font-semibold">Certificates</Link>.</p>
+          <Certificate certificate={result.certificate} />
+        </div>
+      )}
 
       {!started && !result && (
         <ConsentCard quiz={quiz} starting={starting} onStart={start} />
@@ -222,7 +230,7 @@ export default function CourseAssessment() {
 }
 
 function ResultCard({ result, course, onRetry, autoReason }) {
-  const { passed, score_percent, correct, total, newly_completed, career_impact, proctor } = result;
+  const { passed, score_percent, correct, total, newly_completed, career_impact, proctor, certificate } = result;
   return (
     <div className={`mb-5 max-w-3xl rounded-2xl border p-5 shadow-sm ${passed ? "border-teal-200 bg-gradient-to-br from-teal-50 to-white" : "border-amber-200 bg-gradient-to-br from-amber-50 to-white"}`}>
       <div className="flex items-start gap-3">
@@ -267,6 +275,7 @@ function ResultCard({ result, course, onRetry, autoReason }) {
       <div className="flex flex-wrap gap-4 mt-4 text-sm font-semibold">
         {passed ? (
           <>
+            {certificate && <Link to={`/certificates/${course.id}`} className="text-amber-600 hover:underline">🎓 Open my certificate →</Link>}
             <Link to="/profile" className="text-primary-600 hover:underline">View my profile skills →</Link>
             <Link to="/recommendations" className="text-slate-500 hover:underline">See my AI career matches</Link>
             <Link to="/courses" className="text-slate-500 hover:underline">More courses</Link>

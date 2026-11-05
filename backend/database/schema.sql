@@ -165,3 +165,16 @@ CREATE TABLE IF NOT EXISTS skill_test_attempts (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
+
+-- E-certificates issued when a student passes a course assessment (one per student per course).
+CREATE TABLE IF NOT EXISTS certificates (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    cert_code TEXT UNIQUE NOT NULL,          -- public verification id, e.g. CAI-2026-7F3A9C1B
+    user_id INTEGER NOT NULL,
+    course_id INTEGER NOT NULL,
+    score_percent INTEGER,
+    issued_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (user_id, course_id),
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE
+);

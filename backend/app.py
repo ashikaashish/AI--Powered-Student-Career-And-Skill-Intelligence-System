@@ -20,6 +20,7 @@ from routes.aptitude import aptitude_bp
 from routes.learning import learning_bp
 from routes.assessment import assessment_bp
 from routes.skill_test import skill_test_bp
+from routes.certificates import certificates_bp
 from database.migrate import ensure_video_schema
 
 
@@ -46,6 +47,7 @@ def create_app():
     app.register_blueprint(learning_bp, url_prefix="/api/learn")
     app.register_blueprint(assessment_bp, url_prefix="/api/assessment")
     app.register_blueprint(skill_test_bp, url_prefix="/api/skill-test")
+    app.register_blueprint(certificates_bp, url_prefix="/api/certificates")
 
     @app.route("/api/health", methods=["GET"])
     def health():

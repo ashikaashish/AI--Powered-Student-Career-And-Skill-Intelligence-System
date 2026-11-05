@@ -124,6 +124,17 @@ def ensure_video_schema():
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
             );
+            CREATE TABLE IF NOT EXISTS certificates (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                cert_code TEXT UNIQUE NOT NULL,
+                user_id INTEGER NOT NULL,
+                course_id INTEGER NOT NULL,
+                score_percent INTEGER,
+                issued_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                UNIQUE (user_id, course_id),
+                FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+                FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE
+            );
             CREATE TABLE IF NOT EXISTS assessment_attempts (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 user_id INTEGER NOT NULL,

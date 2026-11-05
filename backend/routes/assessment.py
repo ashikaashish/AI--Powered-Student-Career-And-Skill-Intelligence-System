@@ -6,7 +6,8 @@ Topic assessment taken after a course's videos are watched (with light proctorin
   POST /api/assessment/<course_id>/proctor-event    {session_id, event_type, detail}  (activity log)
   POST /api/assessment/<course_id>/submit           {session_id, answers: {question_id: option text}}
 
-Passing marks the course completed and adds the course's skill to the student's profile.
+Passing marks the course completed, adds the course's skill to the student's profile and issues
+an e-certificate (see routes/certificates.py).
 Grading, the timer and the violation count all live on the server - the browser only reports events.
 """
 import json
@@ -16,6 +17,7 @@ from flask import Blueprint, jsonify, request
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from database.db import get_db
 from services.learning import award_after_assessment
+from services.certificates import issue_certificate, certificate_payload
 
 assessment_bp = Blueprint("assessment", __name__)
 
@@ -229,6 +231,11 @@ def submit_assessment(course_id):
     if passed and status != "completed":
         skill, impact = award_after_assessment(db, user_id, course_id)
         newly = True
+
+    # Passing earns the e-certificate (idempotent: retakes never create duplicates).
+    certificate = None
+    if passed:
+        certificate = certificate_payload(issue_certificate(db, user_id, course_id, score))
     db.commit()
     db.close()
 
@@ -238,6 +245,7 @@ def submit_assessment(course_id):
         "newly_completed": newly,
         "skill_awarded": skill if newly else (course["skill_tag"] if passed else None),
         "career_impact": impact,
+        "certificate": certificate,
         "results": results,
         "proctor": {"violations": violations, "max_violations": MAX_VIOLATIONS, "flagged": flagged},
     })

@@ -14,6 +14,7 @@ import {
   Compass,
   BrainCircuit,
   Users,
+  Award,
 } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 
@@ -24,6 +25,7 @@ const studentLinks = [
   { to: "/skill-gap", label: "Skill Gap", icon: BarChart3 },
   { to: "/recommendations", label: "AI Careers", icon: Sparkles },
   { to: "/courses", label: "Learning", icon: BookOpen },
+  { to: "/certificates", label: "Certificates", icon: Award },
   { to: "/jobs", label: "Job Explorer", icon: Briefcase },
   { to: "/chatbot", label: "AI Assistant", icon: MessageSquare },
   { to: "/progress", label: "Progress", icon: TrendingUp },
